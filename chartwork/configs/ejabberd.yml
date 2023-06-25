@@ -1,0 +1,7 @@
+hosts: {{ .values.hostname }}
+auth_method:
+       - internal
+       - anonymous
+users:
+ - "{{ .Values.user.firstName .Values.user.lastName}}"
+
